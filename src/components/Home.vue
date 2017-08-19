@@ -20,7 +20,7 @@
 
     </div>
 
-    <div class="background">
+    <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}">
 
     </div>
 
@@ -32,7 +32,11 @@
     name: 'Home',
     data () {
       return {
-        msg: 'Welcome to the home page.'
+      }
+    },
+    computed: {
+      backgroundUrl () {
+        return require('@/assets/background.png')
       }
     }
   }
