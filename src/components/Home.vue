@@ -28,6 +28,7 @@
 </template>
 
 <script>
+  import deployConfig from '@/../config/deployConfig.json'
   export default {
     name: 'Home',
     data () {
@@ -36,7 +37,11 @@
     },
     computed: {
       backgroundUrl () {
-        return require('@/assets/background.png')
+        if (deployConfig.mode === 'dev') {
+          return require('@/assets/background.png')
+        } else {
+          return '/HubbiePortfolio' + require('@/assets/background.png')
+        }
       }
     }
   }
