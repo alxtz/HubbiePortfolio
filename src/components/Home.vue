@@ -40,7 +40,7 @@
         if (deployConfig.mode === 'dev') {
           return require('@/assets/background.png')
         } else {
-          return '/HubbiePortfolio' + require('@/assets/background.png')
+          return '/HubbiePortfolio/dist' + require('@/assets/background.png')
         }
       }
     }
