@@ -1,4 +1,4 @@
 {
-  "mode": "dev",
-  "_comment": "or dev"
+  "mode": "github",
+  "_comment": "github or dev"
 }
