@@ -1,0 +1,101 @@
+.root {
+  .background.active {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .payload.active {
+    background-color: rgba(94,138,165,1);
+    transition: background-color ease 0.7s, transform 0.3s linear 8.5s;
+    transform: scale(0.0);
+
+    .skillList {
+      opacity: 0;
+      transition: all ease 0.7s;
+    }
+    .enter {
+      opacity: 0;
+      transition: all ease 0.7s;
+    }
+
+    .animateBox0 {
+      animation: animate0 1.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 0.9s;
+    }
+
+    .animateBox1 {
+      animation: animate1 4.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 0.9s;
+    }
+
+    .animateBox2 {
+      animation: animate2 1.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 2.4s;
+    }
+
+    .animateBox3 {
+      animation: animate3 4.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 3.9s;
+    }
+
+    .animateBox4 {
+      animation: animate4 1.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 5.4s;
+    }
+
+    .animateBox5 {
+      animation: animate5 1.5s ease;
+      animation-fill-mode: forwards;
+
+      animation-delay: 6.9s;
+    }
+  }
+}
+
+@-webkit-keyframes animate0 {
+  0%   {right: 0px;}
+  100% {right: -480px;}
+}
+
+@-webkit-keyframes animate1 {
+  0%   {right: 480px;}
+  33%  {right: 0px;}
+  34%  {right: 0px;}
+  66%  {right: 0px;}
+  67%  {right: 0px;}
+  100% {right: -480px;}
+}
+
+@-webkit-keyframes animate2 {
+  0%   {right: 480px;}
+  100% {right: 0px;}
+}
+
+@-webkit-keyframes animate3 {
+  0%   {right: 480px;}
+  33%  {right: 0px;}
+  34%  {right: 0px;}
+  66%  {right: 0px;}
+  67%  {right: 0px;}
+  100% {right: -480px;}
+}
+
+@-webkit-keyframes animate4 {
+  0%   {right: 480px;}
+  100% {right: 0px;}
+}
+
+@-webkit-keyframes animate5 {
+  0%   {right: 480px;}
+  100% {right: 0px;}
+}

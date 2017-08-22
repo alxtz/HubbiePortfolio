@@ -1,12 +1,18 @@
 <template>
   <div class="root">
 
-    <div class="payload">
+    <div class="payload" :class="{active: transactionActive}">
 
       <h1 class="hubbie">HUBBIE</h1>
 
       <div class="animateBox">
-        <input class="codeBox" placeholder="Please Enter Your Code" type="text">
+        <input class="codeBox animateBox0" placeholder="Please Enter Your Code" type="text">
+        <div class="animateBox1">Gathering Ideas</div>
+        <div class="animateBox2"></div>
+        <div class="animateBox3">Assembling Projects</div>
+        <div class="animateBox4"></div>
+        <div class="animateBox5">COMPLETE!</div>
+        <div class="animateBox6"></div>
       </div>
 
       <ul class="skillList">
@@ -16,11 +22,11 @@
         <li class="skill">Photography</li>
       </ul>
 
-      <div class="enter">ENTER</div>
+      <div class="enter" @click="startTransition()">ENTER</div>
 
     </div>
 
-    <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}">
+    <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}" :class="{active: transactionActive}">
 
     </div>
 
@@ -33,15 +39,25 @@
     name: 'Home',
     data () {
       return {
+        transactionActive: false
       }
     },
     computed: {
       backgroundUrl () {
+        let url = this.getBackgroundUrl()
+        return url
+      }
+    },
+    methods: {
+      getBackgroundUrl () {
         if (deployConfig.mode === 'dev') {
           return require('@/assets/background.png')
         } else {
           return '/HubbiePortfolio/dist' + require('@/assets/background.png')
         }
+      },
+      startTransition () {
+        this.transactionActive = true
       }
     }
   }

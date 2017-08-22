@@ -1,8 +1,11 @@
 @import "~@/scss/modules/fonts.scss";
 
+@import "~@/scss/modules/animation_Home.scss";
+
 * {
   box-sizing: border-box;
 }
+
 .root {
   min-height: 100vh;
   background-color: #5e8aa7;
@@ -30,7 +33,6 @@
   }
 }
 
-
 .hubbie {
   margin: 0;
   color: #ffb300;
@@ -48,11 +50,12 @@
 .animateBox {
   width: 480px;
   height: 48px;
+  position: relative;
+  overflow: hidden;
 
   border-radius: 4px;
   background-color: #f4f4f4;
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.5);
-  border: solid 1px #aaaaaa;
   margin: 0 auto;
   margin-bottom: 2.5vh;
 
@@ -65,11 +68,100 @@
     font-family: Play;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
     color: #616161;
+
+    background-color: rgba(0,0,0,0);
   }
   .codeBox::placeholder {
     color: #969696;
+  }
+
+  .animateBox0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+  .animateBox1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480px;
+    top: 0;
+
+    text-align: center;
+    font-family: Play;
+    font-size: 24px;
+    font-weight: bold;
+    color: #616161;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0);
+
+    z-index: 10;
+  }
+  .animateBox2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480*2px;
+    top: 0;
+
+    background-color: #ffb300;
+
+    z-index: 0;
+  }
+  .animateBox3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480*3px;
+    top: 0;
+
+    text-align: center;
+    font-family: Play;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F4F4F4;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0);
+
+    z-index: 10;
+  }
+  .animateBox4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480*4px;
+    top: 0;
+
+    background-color: #2F3745;
+
+    z-index: 0;
+  }
+  .animateBox5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480*5px;
+    top: 0;
+
+    text-align: center;
+    font-family: Play;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffb300;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0);
+
+    z-index: 10;
+  }
+  .animateBox6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 480*6px;
+    top: 0;
   }
 }
 
