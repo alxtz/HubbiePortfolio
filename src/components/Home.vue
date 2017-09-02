@@ -28,7 +28,15 @@
 
     <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}" :class="{active: transactionActive}"></div>
 
-    <div class="bubbleWrapper">
+    <div class="bubbleWrapper" v-show="transactionActive">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+      <div class="circle6"></div>
+      <div class="circle7"></div>
+      <div class="hubText">BE THE HUB</div>
     </div>
 
   </div>
@@ -58,6 +66,7 @@
         }
       },
       startTransition () {
+        console.log('start it')
         this.transactionActive = true
       }
     }

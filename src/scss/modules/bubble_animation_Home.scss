@@ -1,0 +1,148 @@
+$start-delay: 6.5s;
+$bubble-cubic-bezier: cubic-bezier(0.25, 0.1, 0.25, 1);
+$animation-duration: 1.6s;
+$animation-step: 0.3s;
+$init-scale: scale(0.01);
+
+@mixin gpu-hack {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0.0001;
+}
+
+.circle1 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 0 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle2 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 1 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle3 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 2 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle4 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 3 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle5 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 4 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle6 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 5 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.circle7 {
+  transform: $init-scale;
+
+
+  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation-delay: $animation-step * 6 + $start-delay;
+
+
+  animation-fill-mode: forwards;
+
+  @include gpu-hack;
+}
+
+.hubText {
+  top: 80vw;
+  opacity: 0;
+
+  animation: textScale 1.6s cubic-bezier(0.85, 0.01, 0.75, -0.01),
+    textPosition 0.4s cubic-bezier(0.72, 0.29, 0.95, -0.23);
+  animation-delay: $start-delay + 0.4s, $start-delay + 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bubbleGrow {
+  0%   {
+    transform: scale(0.01);
+    opacity: 1;
+    // visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    // visibility: visible;
+  }
+}
+
+@-webkit-keyframes textScale {
+  0%   {
+    transform: scale(0.01);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes textPosition {
+  0%   {
+    top: 80vw;
+    opacity: 1;
+  }
+  100% {
+    top: 160vw;
+    opacity: 1;
+  }
+}
