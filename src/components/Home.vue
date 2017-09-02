@@ -26,8 +26,9 @@
 
     </div>
 
-    <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}" :class="{active: transactionActive}">
+    <div class="background" v-bind:style="{backgroundImage:'url(' + backgroundUrl + ')'}" :class="{active: transactionActive}"></div>
 
+    <div class="bubbleWrapper">
     </div>
 
   </div>

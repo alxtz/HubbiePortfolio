@@ -1,0 +1,16 @@
+.root {
+  overflow: hidden;
+  .bubbleWrapper {
+    border: 2px solid red;
+    position: absolute;
+    // width: 100vw;
+    // height: 100vh;
+    width: 243.8vw;
+    height: 243.8vw;
+    z-index: 20;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
