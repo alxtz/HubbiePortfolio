@@ -1,0 +1,146 @@
+.root {
+  overflow: hidden;
+  .bubbleWrapper {
+    // outline: 10vw solid red;
+    position: absolute;
+    width: 243.8vw;
+    height: 243.8vw;
+    // width: 100px;
+    // height: 100px;
+    z-index: 20;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    // opacity: 0.5;
+    // display: none;
+    background-color: rgba(0,0,0,0);
+
+    outline: 5vw solid red;
+  }
+}
+
+.circle1 {
+  width: 228vw;
+  height: 228vw;
+  position: absolute;
+  z-index: 120;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 38vw solid #a9bcd0;
+
+  left: 3.472%;
+  top: 3.472%;
+}
+
+.circle2 {
+  width: 231.1vw;
+  height: 231.1vw;
+  position: absolute;
+  z-index: 110;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 41.15vw solid #63e5ea;
+
+  // opacity: 0;
+  left: 2.739%;
+  top: 2.739%;
+}
+
+.circle3 {
+  width: 234.3vw;
+  height: 234.3vw;
+  position: absolute;
+  z-index: 100;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 44.33vw solid #33658a;
+
+  // opacity: 0;
+  left: 2.027%;
+  top: 2.027%;
+}
+
+.circle4 {
+  width: 237.5vw;
+  height: 237.5vw;
+  position: absolute;
+  z-index: 90;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 47.5vw solid #47b1d2;
+
+  // opacity: 0;
+  top: 1.333%;
+  left: 1.333%;
+}
+
+.circle5 {
+  width: 240.7vw;
+  height: 240.7vw;
+  position: absolute;
+  z-index: 80;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 50.67vw solid #f8bb32;
+
+  // opacity: 0;
+  left: 0.657%;
+  top: 0.657%;
+}
+
+.circle6 {
+  width: 243.8vw;
+  height: 243.8vw;
+  position: absolute;
+  z-index: 70;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 53.83vw solid #2f4858;
+
+  // opacity: 0;
+
+}
+
+.circle7 {
+  width: 190vw;
+  height: 190vw;
+  position: absolute;
+  z-index: 60;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  // border: 53.83vw solid #2f4858;
+
+  background-color: #242629;
+
+  // opacity: 0;
+  left: 11.038%;
+  top: 11.038%;
+}
+
+.hubText {
+  // outline: 10vw solid yellow;
+  font-size: 75vw;
+  font-family: Play;
+  font-weight: bold;
+  position: absolute;
+  width: 443.8vw;
+  left: -100vw;
+  text-align: center;
+  z-index: 200;
+  // top: 160vw;
+  color: white;
+}
