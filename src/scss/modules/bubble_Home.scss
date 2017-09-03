@@ -11,7 +11,7 @@
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: translate(-50%, -50%) scale(1);
 
 
     // display: flex;
@@ -132,12 +132,11 @@
 }
 
 .hubText {
-  outline: 10vw solid yellow;
+  // outline: 10vw solid yellow;
   font-size: 75vw;
   font-family: Play;
   position: absolute;
   width: 443.8vw;
-  height: 143.8vw;
   left: -100vw;
   text-align: center;
   z-index: 200;
