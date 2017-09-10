@@ -1,0 +1,144 @@
+.main.embedded{
+  position: absolute;
+  z-index: 250;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #242629;
+
+  // transform: translate(-50%, -50%);
+
+  left: 50%;
+  top: 50%;
+
+  .bg {
+    width: 100vw;
+    height: 100vh;
+    min-height: 66vw;
+    min-width: 150vh;
+    position: absolute;
+    background-image: url('~@/assets/BG.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.payload {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 300;
+  display: flex;
+
+  .sideBar {
+    position: relative;
+
+    .sideLabel {
+      font-family: Play;
+      font-size: 30px;
+      font-size: 30px;
+      text-align: left;
+      color: #e7e7e7;
+      text-rendering: optimizeLegibility;
+      margin-left: 2vw;
+      margin-right: 2vw;
+      padding-bottom: 7.5px;
+      margin-top: 24px;
+      border-bottom: 2px solid #979797;
+      margin-bottom: 0;
+    }
+    .pushLink {
+      font-family: Play;
+      font-size: 24px;
+      text-align: left;
+      color: #c0c0c0;
+      margin: 0;
+      margin-left: 2vw;
+      margin-right: 2vw;
+      margin-top: 20px;
+    }
+    .active {
+      color: #ffbb19;
+    }
+    .contactBox {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      bottom: 2vw;
+      display: flex;
+      .link {
+        margin-left: 2vw;
+      }
+      // .link:first-child {
+      //   margin-left: 2vw;
+      // }
+      // .link:last-child {
+      //   margin-right: 2vw;
+      // }
+    }
+  }
+  .content {
+    flex: 1 1 0;
+    overflow: scroll;
+    .close {
+      display: none;
+    }
+    .projectTitle {
+      color: #ffbb19;
+      font-size: 60px;
+      font-family: Play;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 5px;
+    }
+    .phoneDemo {
+      position: relative;
+      width: 280px;
+      height: 427px;
+      margin: 0 auto;
+      background-image: url('~@/assets/mockup2.png');
+      background-size: 100% 100%;
+      .screen {
+        position: absolute;
+        width: 161px;
+        height: 284px;
+        left: 50%;
+        top: 71px;
+        transform: translate(-50%, 0);
+      }
+    }
+    .introText {
+      margin-left: 40px;
+      margin-right: 40px;
+      font-family: PingFang TC;
+      font-size: 18px;
+      line-height: 1.83;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 3vw;
+    }
+    .snapshot {
+      margin: 0 auto;
+      display: block;
+    }
+    .snapshotBox-2 {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      margin-bottom: 3vw;
+    }
+    .link {
+      color: #4990e2;
+    }
+  }
+}
