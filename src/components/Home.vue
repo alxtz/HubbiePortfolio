@@ -37,7 +37,7 @@
       <div class="circle6">
       </div>
       <div class="circle7"></div>
-      <Bump class="pageComponent"></Bump>
+      <Bump class="pageComponent embedded"></Bump>
       <div class="hubText">BE THE HUB</div>
     </div>
 
@@ -46,7 +46,7 @@
 
 <script>
   import deployConfig from '@/../config/deployConfig.json'
-  import Bump from '@/components/Bump'
+  import Bump from '@/components/pages/Bump'
   export default {
     name: 'Home',
     components: {

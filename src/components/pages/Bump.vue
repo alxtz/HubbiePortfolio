@@ -7,10 +7,10 @@
       <div class="sideBar">
         <h2 class="sideLabel">Project Name</h2>
 
-        <div class="pushLink active">BUMP</div>
-        <div class="pushLink">Ear Training</div>
-        <div class="pushLink">雲端發票</div>
-        <div class="pushLink">Music Galaxy</div>
+        <router-link to="Bump" class="pushLink active">BUMP</router-link>
+        <router-link to="PerfectPitchTrain" class="pushLink">Perfect Pitch Train</router-link>
+        <router-link to="CloudReceipt" class="pushLink">雲端發票</router-link>
+        <router-link to="MusicGalaxy" class="pushLink">Music Galaxy</router-link>
 
         <div class="contactBox">
           <div class="link"><img src="~@/assets/cv.svg" alt="cv"></div>
@@ -22,9 +22,13 @@
         <div class="close"></div>
         <h1 class="projectTitle">BUMP</h1>
         <div class="phoneDemo">
-          <div class="screen">
 
-          </div>
+          <!-- <div class="screen">
+            <div class="scrollClips">
+              <img class="scroll" src="~@/assets/BUMP/scroll-1.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-2.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-3.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-4.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-5.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-6.png" alt="snapshot1"><img class="scroll" src="~@/assets/BUMP/scroll-7.jpg" alt="snapshot1">
+            </div>
+          </div> -->
+
         </div>
         <p class="introText">BUMP是一款以獨立音樂為主題的應用程式，開發前後歷時兩個多月，功能從一開始的資訊查詢、揪團，到後來慢慢發展為獨立音樂平台；開發方式是直接和工程師們組成團隊，直接的進行溝通討論，而我負責的任務從資訊架構、介面設計、使用者體驗，到後期也開始進行產品設計來開發新功能和協助行銷等等，過程中學習了不只關於設計、還有種種關於任務規劃和合作的經驗。</p>
         <p class="introText">會做這款應用程式的緣由是因為有一群工程師想參加Opendata的競賽，而他們團隊需要一名設計師，因緣際會下就這樣開始了這個計畫。一開始的方向是工程師自己的點子，他想做出一款可以讓人揪團一起去聽獨立音樂的應用程式，算是工程師自身經歷過的痛點，不過一開始能提供我的想法也就只有這些，包括程式架構、可能會有的功能都很不明確，所以這時候設計師進場，就得從這些初期的想法開始著手。</p>
@@ -50,7 +54,7 @@
 
 <script>
   export default {
-    name: 'Home',
+    name: 'Bump',
     data () {
       return {
       }
@@ -65,4 +69,5 @@
 
 <style scoped lang="scss">
   @import "~@/scss/components/Bump";
+  @import "~@/scss/components/Page";
 </style>
