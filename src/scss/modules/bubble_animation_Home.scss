@@ -6,8 +6,14 @@ $init-scale: scale(0.01);
 
 @mixin gpu-hack {
   will-change: transform;
-  backface-visibility: hidden;
-  perspective: 1000;
+
+  // -webkit-backface-visibility: hidden;
+  // -moz-backface-visibility: hidden;
+  // -ms-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  //
+  // perspective: 1000;
+
   opacity: 0.0001;
 }
 
@@ -93,7 +99,7 @@ $init-scale: scale(0.01);
   transform: $init-scale;
 
 
-  animation: bubbleGrow $animation-duration $bubble-cubic-bezier;
+  animation: bubbleGrow $animation-duration - 0.2s $bubble-cubic-bezier;
   animation-delay: $animation-step * 6 + $start-delay;
 
 
@@ -108,10 +114,39 @@ $init-scale: scale(0.01);
 
   animation: textScale 1.6s cubic-bezier(0.72, 0.29, 0.95, -0.23),
     textPosition 0.4s cubic-bezier(0.85, 0.01, 0.75, -0.01);
+    // textPosition 4.4s linear;
   animation-delay: $start-delay + 0.4s, $start-delay + 1.5s;
   animation-fill-mode: forwards;
 
   transform-origin: 50% 50%;
+
+  transform: scale(0.01);
+
+  will-change: top;
+}
+
+.pageComponent {
+  transform: scale(0.01) translate(-50%, -50%);
+
+  opacity: 0;
+  animation: componentGrow 1.2s $bubble-cubic-bezier;
+  animation-delay: $animation-step * 6 + $start-delay;
+
+  transform-origin: 0% 0%;
+
+  animation-fill-mode: forwards;
+
+  // will-change: transform;
+  //
+  // -webkit-backface-visibility: hidden;
+  // -moz-backface-visibility: hidden;
+  // -ms-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  //
+  // perspective: 1000;
+  //
+  // -webkit-transform-style: preserve-3d;
+
 }
 
 @-webkit-keyframes bubbleGrow {
@@ -145,6 +180,17 @@ $init-scale: scale(0.01);
   }
   100% {
     top: 160vw;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes componentGrow {
+  0%   {
+    transform: scale(0.01) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
     opacity: 1;
   }
 }

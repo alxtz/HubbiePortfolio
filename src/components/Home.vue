@@ -34,8 +34,10 @@
       <div class="circle3"></div>
       <div class="circle4"></div>
       <div class="circle5"></div>
-      <div class="circle6"></div>
+      <div class="circle6">
+      </div>
       <div class="circle7"></div>
+      <Bump class="pageComponent"></Bump>
       <div class="hubText">BE THE HUB</div>
     </div>
 
@@ -44,8 +46,12 @@
 
 <script>
   import deployConfig from '@/../config/deployConfig.json'
+  import Bump from '@/components/Bump'
   export default {
     name: 'Home',
+    components: {
+      Bump
+    },
     data () {
       return {
         transactionActive: false
